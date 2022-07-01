@@ -1,0 +1,239 @@
+/*Roosa navigatsiooni äär*/
+.roosa_gradient {
+    background: rgb(246,202,202);
+    background: linear-gradient(90deg, rgba(246,202,202,1) 0%, rgba(244,217,217,1) 5%, rgba(249,222,222,1) 17%, rgba(255,255,255,1) 86%);
+}
+
+.logo {
+    
+    width: 60%;
+    margin: 1rem auto;
+}
+
+/*filling second row bottom of the page*/
+.fill {
+    min-height: 60vh;
+    height: 100%;
+}
+
+/*Navigation and menus*/
+
+#menuBtn {
+    visibility: hidden;
+}
+
+.nav-link-png{
+    width: 100%;
+    
+}
+
+.nav-link-png:hover {
+    cursor: pointer;
+    width: 103%;
+    border-left: 1px solid red;
+    
+   
+}
+
+.nav-item {
+    z-index: 1100;
+}
+
+
+.nav{
+    margin-top: 5rem;
+}
+
+/*Third(right) information field Sign in/sign Up etc*/
+
+form {
+    max-width: 500px;
+    margin-left: 5rem;
+    margin-right: 3rem;
+}
+
+.signin_and_up_area {
+    z-index: 1001;
+}
+
+/*Bottom graphics(mountains and chr tree*/
+
+.bottom_graphics_mountains {
+    
+    z-index: 999;
+    position: fixed;
+    margin-left: -38rem;
+    bottom:0;
+    opacity: 0.7;
+}
+
+.bottom_graphics_boy {
+    position: fixed;
+    z-index: 1000;
+    margin-left: 16rem;
+    bottom:0;
+    
+/*Mobile*/
+}
+#menu {
+    display:none;
+    background-color: aqua;
+}
+
+
+
+/*Medium device*/
+@media (max-width: 991.98px) {
+    form {
+        max-width: 500px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+ }
+
+/*Small device*/
+@media (max-width: 768px) { 
+
+    form {
+        max-width: 500px;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    #menu {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        display: block;
+        background: rgb(246,202,202);
+        background: linear-gradient(180deg, rgba(246,202,202,1) 0%, rgba(244,217,217,1) 5%, rgba(249,222,222,1) 17%, rgba(255,255,255,1) 86%);
+        z-index: 1000;
+        display: block;
+        bottom:100vh;
+        
+    }
+
+
+    #menu.show {
+        top: 0;
+        
+    }
+
+    #menuBtn:hover {
+        background-color: rgb(255, 223, 223);
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .nav-link-png-mob {
+        width: 80%;
+        
+    }
+
+    .exitbtn {
+        display: block;
+        position:absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        right: 2rem;
+        top: 1rem;
+    }
+
+    #closeMenuBtn {
+        width: 100%;
+       
+    }
+
+    #closeMenuBtn:hover {
+       cursor: pointer;
+       background-color: rgb(255, 223, 223);
+       border-radius: 5px;
+    }
+
+    .mobilenav {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    
+    .signin_and_up_area {
+        z-index: 700;
+    }
+    
+    .roosa_gradient_mobile {
+        display: block;
+        background: rgb(246,202,202);
+        background: linear-gradient(180deg, rgba(246,202,202,1) 0%, rgba(244,217,217,1) 5%, rgba(249,222,222,1) 17%, rgba(255,255,255,1) 86%);
+    }
+
+    .roosa_gradient {
+        background: rgb(246,202,202);
+        background: linear-gradient(180deg, rgba(246,202,202,1) 0%, rgba(244,217,217,1) 5%, rgba(249,222,222,1) 17%, rgba(255,255,255,1) 86%);
+    }
+
+    .menudiv {
+        z-index: 2000; 
+        text-align: center;
+        
+    }
+ 
+    #menuBtn {
+        visibility:visible;
+        width: 40%;
+        margin: 1rem auto;
+    }
+ 
+    .info p{
+        /*background-color: aquamarine;*/
+        margin:3rem 1rem;
+
+    }
+    .bottom_graphics_boy {
+        position: fixed;
+        z-index: 1000;
+        margin-left: 9rem;
+        bottom:0;
+    }
+
+    .bottom_graphics_mountains {
+       visibility: hidden;
+    }
+  
+}
+
+
+/*Extra small screen*/
+@media (max-width: 575.98px) { 
+
+    form {
+        max-width: 500px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .maintitle {
+        margin-top: 0.8rem;
+    }
+
+    .menudiv {
+           
+        text-align: center;
+    }
+
+    #menuBtn {
+        visibility:visible;
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    .info p{
+        /*background-color: rgb(22, 54, 44);*/
+        margin:3rem 1rem;
+
+    }
+}
+
+
