@@ -10,6 +10,22 @@
     margin: 1rem auto;
 }
 
+#loggedInUser {
+   color:#8b3b2b;
+   font-size:larger;
+   display: none;
+   text-decoration: none;
+}
+
+
+
+#loggingOut {
+    color:#8b3b2b;
+    font-size:larger;
+    text-decoration: none;
+    
+}
+
 /*filling second row bottom of the page*/
 .fill {
     min-height: 60vh;
@@ -33,6 +49,10 @@
     border-left: 1px solid red;
     
    
+}
+
+#hiddenMenuItemLoggedOut{
+    display: none;
 }
 
 .nav-item {

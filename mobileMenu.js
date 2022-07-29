@@ -1,3 +1,4 @@
+//mobile menu button
 var menuBtn = document.getElementById('menuBtn');
 var menu = document.getElementById('menu');
 var closeMenuBtn = document.getElementById('closeMenuBtn');
