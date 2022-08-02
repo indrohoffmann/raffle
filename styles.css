@@ -6,8 +6,9 @@
 
 .logo {
     
-    width: 60%;
+    width: 40%;
     margin: 1rem auto;
+    
 }
 
 #loggedInUser {
@@ -39,16 +40,17 @@
 }
 
 .nav-link-png{
-    width: 100%;
+    width: 70%;
     
 }
 
 .nav-link-png:hover {
     cursor: pointer;
-    width: 103%;
+    width: 72%;
     border-left: 1px solid red;
-    
-   
+    border-bottom: 1px solid red;
+    border-radius: 0 0 0 4px;
+    box-shadow:0px 3px rgb(247, 220, 220) ;
 }
 
 #hiddenMenuItemLoggedOut{

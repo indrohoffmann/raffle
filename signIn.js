@@ -1,9 +1,9 @@
 //et kasutada firebase funktsioone firebase.js iset
 import * as firebase from "./firebase.js"
 
-let email = document.querySelector("#email")
-let password = document.querySelector("#password")
-let signInBtn = document.querySelector("#signInBtn")
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let signInBtn = document.querySelector("#signInBtn");
 
 
 // Initialize Firebase Authentication and get a reference to the service
@@ -22,5 +22,7 @@ signInBtn.onclick = function (e) {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            document.getElementById("passwordMessage").innerHTML = "*Password is incorrect"
+            passwordMessage.style.color = "red";
         });
 };

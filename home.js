@@ -1,7 +1,7 @@
 //Selleks et sisse logitud kasutaja näeks home lingile vajutades hoopis my lotterys
 
 //et kasutada firebase funktsioone firebase.js iset
-import * as firebase from "./firebase.js"
+/*import * as firebase from "./firebase.js"
 
 var homeLink = document.getElementById("homeLink")
 
