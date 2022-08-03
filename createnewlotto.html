@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <!--mobile navigarion menu-->
+  <!--mobile navigation menu-->
   <div id="menu">
 
     <div class="exitbtn">
@@ -94,26 +94,32 @@
         </ul>
       </div>
 
+
+
       <!--info and content-->
-      <div class="col-sm-6">
+      <div class="col-sm-6 createNewLottoArea">
         <h1>Create new christmas lottery</h1>
         <br>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Lottery's name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+          <label for="lotterysName" class="form-label">Lottery's name</label>
+          <input type="text" class="form-control" id="lotterysName">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Add participants email addresses</label>
-          <input type="email" class="form-control" id="addparticipamtas" placeholder="name@example.com">
+          <label for="lotterysEndDate" class="form-label">Lottery's end date</label>
+          <input type="date" class="form-control" id="lotterysEndDate">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Describe your lottery</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="lotterysDescription" class="form-label">Describe your lottery</label>
+
+          <textarea class="form-control" id="lotterysDescription" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Create new lottery</button>
+        <button type="submit" class="btn btn-primary" id="createNewLotteryBtn">Create new lottery</button>
       </div>
     </div>
   </div>
+
+
+
   <!--graphics for a bottom of a page-->
   <div class="container-fluid">
     <div class="row fill">
@@ -138,6 +144,8 @@
   <script type="module" src="./session.js"></script>
   <script type="module" src="header.js"></script>
   <script type="module" src="./menu.js"></script>
+  <script type="module" src="createlotto.js"></script>
+
 
 </body>
 

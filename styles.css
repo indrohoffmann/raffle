@@ -78,6 +78,10 @@ form {
     z-index: 1001;
 }
 
+.createNewLottoArea {
+    z-index: 1001;
+}
+
 /*Bottom graphics(mountains and chr tree*/
 
 .bottom_graphics_mountains {

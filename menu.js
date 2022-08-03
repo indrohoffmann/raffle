@@ -20,5 +20,6 @@ firebase.onAuthStateChanged(auth, (user) => {
     } else {
         // User is signed out and redirected to
         myLotterysMenuItem.style.display = "none";
+        homeLink.style.display = "block";
     }
 });
