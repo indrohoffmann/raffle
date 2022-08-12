@@ -33,7 +33,10 @@ export const db = getFirestore(app);
 export {
     collection,
     addDoc,
-    getDocs
+    getDocs,
+    doc,
+    getDoc,
+    updateDoc
 }
 from "https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js";
 
@@ -46,5 +49,6 @@ export {
     updateProfile,
     onAuthStateChanged,
     signOut
+
 }
 from "https://www.gstatic.com/firebasejs/9.9.0/firebase-auth.js";

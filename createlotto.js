@@ -27,9 +27,11 @@ createNewLotteryBtn.onclick = async function (e) {
                 lotterysName: lotterysName.value,
                 lotterysEndDate: lotterysEndDate.value,
                 lotterysDescription: lotterysDescription.value,
-                creator: uid
+                creator: uid,
+                participants: []
             });
             console.log("www.lotto.com/joinLotto.html?lottoID=", docRef.id);
+            window.location.replace("lotto.html?ID=" + docRef.id);
         }
 
     } catch (e) {
@@ -37,6 +39,7 @@ createNewLotteryBtn.onclick = async function (e) {
     }
 
     console.log(lotterysName.value, lotterysEndDate.value, lotterysDescription.value);
+
     alert("Congrats... New lottery created")
     //clear input fields after submiting information
     lotterysName.value = '';

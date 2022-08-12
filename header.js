@@ -5,7 +5,7 @@ import * as firebase from "./firebase.js"
 
 var loggedInUser = document.getElementById('loggedInUser');
 var loggingOut = document.getElementById("loggingOut");
-var signInBtn = document.getElementById("signInBtn")
+var signInLink = document.getElementById("signInLink")
 
 
 // Initialize Firebase Authentication and get a reference to the service
@@ -21,14 +21,14 @@ firebase.onAuthStateChanged(auth, (user) => {
         loggedInUser.style.display = "block";
         loggedInUser.removeAttribute("href");
         loggingOut.style.cursor = "pointer";
-        signInBtn.style.display = "none";
+        signInLink.style.display = "none";
 
 
     } else {
         // User is signed out and redirected to
         loggedInUser.style.display = "none";
         loggingOut.style.display = "none";
-        signInBtn.style.display = "block";
+        signInLink.style.display = "block";
     }
 });
 
@@ -40,4 +40,4 @@ loggingOut.onclick = function (e) {
     }).catch((error) => {
         // An error happened.
     });
-};
+}

@@ -50,7 +50,7 @@
         <img src="media/heading.png" class="img-fluid maintitle" alt="yeo">
 
       </div>
-      <div class="col-sm-1"><a href="index.html" id="loggedInUser">Sign In</a><a href="index.html" id="signInBtn">Sign
+      <div class="col-sm-1"><a href="index.html" id="loggedInUser">Sign In</a><a href="index.html" id="signInLink">Sign
           In</a></div>
       <div class="col-sm-1"><a href="index.html" id="loggingOut">Log out</a></div>
       <div class="col-sm-1">
@@ -94,10 +94,19 @@
       </div>
 
       <!--info and content-->
-      <div class="col-sm-9">
-        <p>You dont have any lotterys created at this moment. Create new lottery from <a
-            href="createnewlotto.html">here</a></p>
+      <div class="col-sm-9 bringContentForward">
+        <p>All your created raffles will appear here. If you haven't created one yet, you can do it from here
+          <button class="btn btn-primary" id="createLottoBtnMylotteryPage">Create New</button></p>
+
+        <ul class="list-group">
+          <div><b>Lotteries created by you:</b></div>
+          <li id="myCreatedLotterys"></li>
+
+
+        </ul>
+        <div id="myCreatedLotterysNotCreatedYet">No raffles created yet</div>
       </div>
+
     </div>
   </div>
   <!--graphics for a bottom of a page-->
