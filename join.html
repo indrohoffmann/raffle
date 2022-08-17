@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <!--mobile navigarion menu-->
     <div id="menu">
 
@@ -62,8 +63,34 @@
         </div>
     </div>
 
+
+    <!--Katsetus-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" roosa_gradient col-3">
+
+            </div>
+            <div class="col-8 roosa_gradient_mobile">
+
+                <div id="lotteryInfo">Welcome! You have been invited to participate in a christmas raffle.</div>
+
+            </div>
+            <!--<div class="col-sm-1"><a href="index.html" id="loggedInUser">Sign In</a><a href="index.html"
+                id="signInLink">Sign
+                In</a></div>
+        <div class="col-sm-1"><a href="index.html" id="loggingOut">Log out</a></div>-->
+            <div class="col-sm-1">
+                <div class="menudiv">
+                    <img src="media/menubtnnoborder.png" id="menuBtn" alt="mobile menu button">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--Informational bootstrap row-->
     <div class="container-fluid">
+
         <div class="row">
 
             <!--Navigation menu-->
@@ -95,37 +122,71 @@
 
 
             <!--info and content-->
-            <div class="col-sm-9 bringContentForward">
-                <div id="lotteryInfo">Welcome!</div>
+            <div class="col-sm-4 bringContentForward">
 
 
-                <table class="table">
+                <table class="table" id="joinInfoTable">
                     <thead class="thead-light">
                         <tr>
-                            <th scope="col">Lotterys Name</th>
-                            <th scope="col">End date</th>
-                            <th scope="col">Description</th>
+                            <th id="joinNameTable" class="borderBottomDelete" scope="col">Raffles Name</th>
+                            <!--<th id="joinDateTable" scope="col">End date</th>
+                            <th id="joinDescriptionTable" scope="col">Description</th>-->
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="lotteryNameTable">Ahvi lotto</td>
-                            <td id="lotteryDadeTable">22.8.22</td>
-                            <td id="lotteryDescriptionTable">Väga hea loto on nyyd siis loodud
-                                dsfgsldkjfglsdnfgnsdf.gsd.fgn.s,dmfngsdmfng.msdnfg.,mnsd
+                            <td id="lotteryNameTable"></td>
                             </td>
                         </tr>
-
-
-
                     </tbody>
+
+
+                    <thead class="thead-light">
+                        <tr>
+                            <th id="joinDateTable" class="borderBottomDelete" scope="col">End date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="lotteryDadeTable"></td>
+                            </td>
+                        </tr>
+                    </tbody>
+
+
+                    <thead class="thead-light">
+                        <tr>
+                            <th id="joinDescriptionTable" class="borderBottomDelete" scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="borderBottomDelete" id="lotteryDescriptionTable">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- Old build<tbody>
+                        <tr>
+                            <td id="lotteryNameTable"></td>
+                            <td id="lotteryDadeTable"></td>
+                            <td id="lotteryDescriptionTable">
+                            </td>
+                        </tr>
+                    </tbody>-->
                 </table>
 
-                <form>
-                    <div class="mb-5">
+
+
+            </div>
+            <div class="col-sm-5 bringContentForward">
+
+                <form id="joinForm">
+                    <div class="mb-5 joinNameInputField">
                         <label for="exampleInputEmail1" class="form-label">Name</label>
                         <input type="text" class="form-control" id="joinName" aria-describedby="emailHelp">
-
+                        <div class="form-text">It is advisable to write your name clearly so that you are clearly
+                            recognizable.
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Email</label>
@@ -135,7 +196,6 @@
                     <button type="submit" class="btn btn-primary" id="joinBtn">Join</button>
                 </form>
             </div>
-
         </div>
     </div>
 
