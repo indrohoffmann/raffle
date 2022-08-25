@@ -3,10 +3,6 @@ Overall
 ---------------------*/
 
 
-* {
-    box-sizing: border-box;
-}
-
 li {
     list-style-type: none;
 }
@@ -183,6 +179,7 @@ Navigation and menus
 
 
 
+
 /*-----------------------------------------------------------
 Third(right) information field Sign in/sign Up etc CONTENT
 -------------------------------------------------------------*/
@@ -308,17 +305,14 @@ margin-left: 2rem;
 }
 
 .thankyou {
-    margin-top: 15rem;
+    width: 60rem;
+    height: 40rem;
+  margin:1rem auto;
+  
     position: absolute;
-    height: 40%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: antiquewhite;
-    padding:5rem;
-    text-align: center;
-    border:#b3888815 solid 2px;
-    border-radius: 3px;
-    z-index: 1001;
+    background-color: rgba(250, 235, 215, 0.671);
+    border: solid red 1px;
+    
 }
 
 /*-------------------------------------
@@ -347,11 +341,6 @@ Bottom graphics(mountains and chr tree
     background-color: aqua;
 }
 
-.maintitle {
-  width: 60%;
-    margin-left: 10rem;
-    margin-top: 3rem;
-}
 
 
 
@@ -525,3 +514,4 @@ Extra small screen
         margin:3rem 1rem;
 
     }
+}
